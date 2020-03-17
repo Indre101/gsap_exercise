@@ -4,12 +4,13 @@
   "description": "",
   "main": "beachball.js",
   "dependencies": {
+    "gsap": "^3.2.4",
     "parcel-bundler": "^1.12.4"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "parcel *.html --open",
-    "build": "parcel build *.html --public-url ./"
+    "start": "parcel beachball.html --open",
+    "build": "parcel build beachball.html --public-url ./"
   },
   "repository": {
     "type": "git",
