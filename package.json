@@ -9,8 +9,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "parcel beachball.html --open",
-    "build": "parcel build beachball.html --public-url ./"
+    "start": "parcel *.html --open",
+    "build": "parcel build *.html --public-url ./"
   },
   "repository": {
     "type": "git",
