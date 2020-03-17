@@ -1,17 +1,24 @@
 "use strict";
 import { gsap } from "gsap";
-
-function moveBall(params) {
+function moveBall() {
   gsap.to(document.querySelector(".ball"), {
-    transform: "translateX(400px)",
+    x: 400,
     duration: 2
   });
 }
 
-rotateBall();
-function rotateBall() {
-  gsap.to(document.querySelector(".ball"), {
-    transform: " rotate(-30deg) translateX(400px)",
+const tl = gsap.timeline();
+sequince();
+function sequince() {
+  tl.to(document.querySelector(".ball"), {
+    x: 400,
+    rotation: -60,
+    duration: 2
+  });
+
+  tl.to(document.querySelector(".ball"), {
+    scale: 0.1,
+    transformOrigin: "bottom",
     duration: 2
   });
 }
