@@ -8,7 +8,6 @@ function moveBall() {
 }
 
 const tl = gsap.timeline();
-sequince();
 function sequince() {
   tl.to(document.querySelector(".ball"), {
     x: 400,
@@ -21,4 +20,13 @@ function sequince() {
     transformOrigin: "bottom",
     duration: 2
   });
+}
+
+moveAll();
+function moveAll() {
+  gsap.fromTo(
+    ".ball",
+    { y: -400, duration: 2 },
+    { y: 0, duration: 2, ease: "elastic", stagger: 0.5 }
+  );
 }
